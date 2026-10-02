@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Olist Logistics Optimizer</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<div id="login" class="login hidden">
+  <form id="loginForm" class="login-card">
+    <div class="brand"><span class="mark">O</span><div><b>Olist Logistics</b><small>OPTIMIZER</small></div></div>
+    <h2 data-i18n="signin">Sign in</h2>
+    <label><span data-i18n="username">Username</span><input name="username" autocomplete="username" required></label>
+    <label><span data-i18n="password">Password</span><input name="password" type="password" autocomplete="current-password" required></label>
+    <button class="primary" type="submit" data-i18n="signin">Sign in</button>
+    <div id="loginErr" class="err"></div>
+  </form>
+</div>
+<div id="app" class="layout hidden">
+  <aside class="side">
+    <div class="brand"><span class="mark">O</span><div><b>Olist Logistics</b><small>OPTIMIZER</small></div></div>
+    <nav id="nav" class="nav"></nav>
+    <div class="side-foot">
+      <button id="langBtn" class="ghost sm">العربية</button>
+      <div id="whoami" class="muted sm"></div>
+      <button id="logout" class="ghost sm" data-i18n="logout">Sign out</button>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="top"><div><div class="eyebrow" id="crumb"></div><h1 id="pageTitle"></h1></div><span id="apiStatus" class="pill ok">●</span></header>
+    <div id="view"></div>
+  </main>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="/static/i18n.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
